@@ -11,16 +11,11 @@ do {
     // se una di queste due condizioni è vera (per cui ho usato l'operatore OR ||), ripeti il loop.
 } while (quattroCifre.length != 4 || isNaN(parseInt(quattroCifre)))
 
-// creo un array contenente le singole cifre con lo string method ".split('')"
-let quattroCifreSplit = quattroCifre.split("");
-
-
 let somma = 0;
 
 //itero l'array e sommo i suoi componenti.
-for (let i = 0; i < quattroCifreSplit.length; i++) {
-    somma += parseInt(quattroCifreSplit[i])
-    
+for (let i = 0; i < quattroCifre.length; i++) {
+    somma += parseInt(quattroCifre[i])
 }
 
-console.log(`il numero che hai scelto è ${quattroCifre}. La somma delle sue cifre (${quattroCifreSplit}) è ${somma}.`);
+console.log(`il numero che hai scelto è ${quattroCifre}. La somma delle sue cifre (${quattroCifre.split("")}) è ${somma}.`);

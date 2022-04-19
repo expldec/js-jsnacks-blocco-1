@@ -13,7 +13,7 @@ do {
 
 let somma = 0;
 
-//itero l'array e sommo i suoi componenti.
+//itero la stringa come fosse un array e sommo i suoi componenti.
 for (let i = 0; i < quattroCifre.length; i++) {
     somma += parseInt(quattroCifre[i])
 }
